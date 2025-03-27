@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Movements</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Camera Movements</h1>
+        <ul id="language-list">
+            <li data-lang="en" class="active">EN</li>
+            <li data-lang="es">ES</li>
+            <li data-lang="fr">FR</li>
+            <li data-lang="it">IT</li>
+            <li data-lang="de">DE</li>
+        </ul>
+    </header>
+    <main class="grid-container">
+        <section id="pan" class="card">
+            <div class="animation-container">
+                <div class="camera-view pan-animation"></div>
+                <div class="subject"></div>
+            </div>
+            <div class="card-content">
+                <h2 data-lang="pan">Pan</h2>
+                <p class="description" data-lang="pan-desc">Horizontal movement on its axis</p>
+                <p class="example" data-lang="pan-example">"Citizen Kane" (1941) - Exploring Xanadu Mansion</p>
+            </div>
+        </section>
+
+        <section id="tilt" class="card">
+            <div class="animation-container">
+                <div class="camera-view tilt-animation"></div>
+                <div class="subject"></div>
+            </div>
+            <div class="card-content">
+                <h2 data-lang="tilt">Tilt</h2>
+                <p class="description" data-lang="tilt-desc">Vertical movement to show height</p>
+                <p class="example" data-lang="tilt-example">"Vertigo" (1958) - Staircase in the Tower</p>
+            </div>
+        </section>
+
+        <section id="zoom" class="card">
+            <div class="animation-container">
+                <div class="camera-view zoom-animation"></div>
+                <div class="subject"></div>
+            </div>
+            <div class="card-content">
+                <h2 data-lang="zoom">Zoom</h2>
+                <p class="description" data-lang="zoom-desc">Distance adjustment without moving the camera</p>
+                <p class="example" data-lang="zoom-example">"Jaws" (1975) - Dolly Zoom on the Beach</p>
+            </div>
+        </section>
+
+        <section id="dolly" class="card">
+            <div class="animation-container">
+                <div class="camera-view dolly-animation"></div>
+                <div class="subject"></div>
+            </div>
+            <div class="card-content">
+                <h2 data-lang="dolly">Dolly</h2>
+                <p class="description" data-lang="dolly-desc">Physical movement forward or backward</p>
+                <p class="example" data-lang="dolly-example">"The Shining" (1980) - Hotel Hallways</p>
+            </div>
+        </section>
+
+        <section id="truck" class="card">
+            <div class="animation-container">
+                <div class="camera-view truck-animation"></div>
+                <div class="subject"></div>
+            </div>
+            <div class="card-content">
+                <h2 data-lang="truck">Truck</h2>
+                <p class="description" data-lang="truck-desc">Lateral movement parallel to the subject</p>
+                <p class="example" data-lang="truck-example">"Goodfellas" (1990) - Copacabana Entrance</p>
+            </div>
+        </section>
+
+        <section id="pedestal" class="card">
+            <div class="animation-container">
+                <div class="camera-view pedestal-animation"></div>
+                <div class="subject"></div>
+            </div>
+            <div class="card-content">
+                <h2 data-lang="pedestal">Pedestal</h2>
+                <p class="description" data-lang="pedestal-desc">Straight vertical movement</p>
+                <p class="example" data-lang="pedestal-example">"2001: A Space Odyssey" (1968) - Monolith</p>
+            </div>
+        </section>
+
+        <section id="crane" class="card">
+            <div class="animation-container">
+                <div class="camera-view crane-animation"></div>
+                <div class="subject"></div>
+            </div>
+            <div class="card-content">
+                <h2 data-lang="crane">Crane</h2>
+                <p class="description" data-lang="crane-desc">Wide movement with a crane</p>
+                <p class="example" data-lang="crane-example">"Gone with the Wind" (1939) - Burning Atlanta</p>
+            </div>
+        </section>
+
+        <section id="arc" class="card">
+            <div class="animation-container">
+                <div class="camera-view arc-animation"></div>
+                <div class="subject"></div>
+            </div>
+            <div class="card-content">
+                <h2 data-lang="arc">Arc</h2>
+                <p class="description" data-lang="arc-desc">Circular movement around the subject</p>
+                <p class="example" data-lang="arc-example">"The Matrix" (1999) - Bullet Time</p>
+            </div>
+        </section>
+
+        <section id="follow" class="card">
+            <div class="animation-container">
+                <div class="camera-view follow-animation"></div>
+                <div class="subject"></div>
+            </div>
+            <div class="card-content">
+                <h2 data-lang="follow">Follow</h2>
+                <p class="description" data-lang="follow-desc">Fluid subject tracking</p>
+                <p class="example" data-lang="follow-example">"Children of Men" (2006) - Ambush Scene</p>
+            </div>
+        </section>
+
+        <section id="push" class="card">
+            <div class="animation-container">
+                <div class="camera-view push-animation"></div>
+                <div class="subject"></div>
+            </div>
+            <div class="card-content">
+                <h2 data-lang="push">Push</h2>
+                <p class="description" data-lang="push-desc">Direct approach to the subject</p>
+                <p class="example" data-lang="push-example">"Pulp Fiction" (1994) - Uma Thurman’s Dance</p>
+            </div>
+        </section>
+
+        <section id="pull" class="card">
+            <div class="animation-container">
+                <div class="camera-view pull-animation"></div>
+                <div class="subject"></div>
+            </div>
+            <div class="card-content">
+                <h2 data-lang="pull">Pull</h2>
+                <p class="description" data-lang="pull-desc">Direct withdrawal from the subject</p>
+                <p class="example" data-lang="pull-example">"The Godfather" (1972) - Final Baptism</p>
+            </div>
+        </section>
+
+        <section id="whip-pan" class="card">
+            <div class="animation-container">
+                <div class="camera-view whip-pan-animation"></div>
+                <div class="subject"></div>
+            </div>
+            <div class="card-content">
+                <h2 data-lang="whip-pan">Whip Pan</h2>
+                <p class="description" data-lang="whip-pan-desc">Fast pan for transitions</p>
+                <p class="example" data-lang="whip-pan-example">"Kill Bill" (2003) - Scene Changes</p>
+            </div>
+        </section>
+
+        <section id="handheld" class="card">
+            <div class="animation-container">
+                <div class="camera-view handheld-animation"></div>
+                <div class="subject"></div>
+            </div>
+            <div class="card-content">
+                <h2 data-lang="handheld">Handheld</h2>
+                <p class="description" data-lang="handheld-desc">Unsteady handheld movement</p>
+                <p class="example" data-lang="handheld-example">"The Blair Witch Project" (1999) - Forest</p>
+            </div>
+        </section>
+
+        <section id="steadicam" class="card">
+            <div class="animation-container">
+                <div class="camera-view steadicam-animation"></div>
+                <div class="subject"></div>
+            </div>
+            <div class="card-content">
+                <h2 data-lang="steadicam">Steadicam</h2>
+                <p class="description" data-lang="steadicam-desc">Stabilized tracking</p>
+                <p class="example" data-lang="steadicam-example">"Rocky" (1976) - Museum Stairs</p>
+            </div>
+        </section>
+
+        <section id="tracking-shot" class="card">
+            <div class="animation-container">
+                <div class="camera-view tracking-shot-animation"></div>
+                <div class="subject"></div>
+            </div>
+            <div class="card-content">
+                <h2 data-lang="tracking-shot">Tracking Shot</h2>
+                <p class="description" data-lang="tracking-shot-desc">Long continuous shot</p>
+                <p class="example" data-lang="tracking-shot-example">"Touch of Evil" (1958) - Opening</p>
+            </div>
+        </section>
+
+        <section id="reveal" class="card">
+            <div class="animation-container">
+                <div class="camera-view reveal-animation"></div>
+                <div class="subject"></div>
+            </div>
+            <div class="card-content">
+                <h2 data-lang="reveal">Reveal</h2>
+                <p class="description" data-lang="reveal-desc">Movement that uncovers something</p>
+                <p class="example" data-lang="reveal-example">"Star Wars" (1977) - Darth Vader Appears</p>
+            </div>
+        </section>
+
+        <section id="dutch-angle" class="card">
+            <div class="animation-container">
+                <div class="camera-view dutch-angle-animation"></div>
+                <div class="subject"></div>
+            </div>
+            <div class="card-content">
+                <h2 data-lang="dutch-angle">Dutch Angle</h2>
+                <p class="description" data-lang="dutch-angle-desc">Tilted angle for tension</p>
+                <p class="example" data-lang="dutch-angle-example">"The Third Man" (1949) - Vienna Streets</p>
+            </div>
+        </section>
+
+        <section id="over-the-shoulder" class="card">
+            <div class="animation-container">
+                <div class="camera-view over-the-shoulder-animation"></div>
+                <div class="subject"></div>
+            </div>
+            <div class="card-content">
+                <h2 data-lang="over-the-shoulder">Over-the-Shoulder</h2>
+                <p class="description" data-lang="over-the-shoulder-desc">View over the shoulder</p>
+                <p class="example" data-lang="over-the-shoulder-example">"Casablanca" (1942) - Intimate Dialogues</p>
+            </div>
+        </section>
+
+        <section id="rack-focus" class="card">
+            <div class="animation-container">
+                <div class="camera-view rack-focus-animation"></div>
+                <div class="subject"></div>
+            </div>
+            <div class="card-content">
+                <h2 data-lang="rack-focus">Rack Focus</h2>
+                <p class="description" data-lang="rack-focus-desc">Focus shift between planes</p>
+                <p class="example" data-lang="rack-focus-example">"The Graduate" (1967) - Mrs. Robinson and Ben</p>
+            </div>
+        </section>
+
+        <section id="boom" class="card">
+            <div class="animation-container">
+                <div class="camera-view boom-animation"></div>
+                <div class="subject"></div>
+            </div>
+            <div class="card-content">
+                <h2 data-lang="boom">Boom</h2>
+                <p class="description" data-lang="boom-desc">Vertical movement with a boom</p>
+                <p class="example" data-lang="boom-example">"Titanic" (1997) - Ship View</p>
+            </div>
+        </section>
+
+        <section id="parallax" class="card">
+            <div class="animation-container">
+                <div class="camera-view parallax-animation"></div>
+                <div class="subject"></div>
+            </div>
+            <div class="card-content">
+                <h2 data-lang="parallax">Parallax</h2>
+                <p class="description" data-lang="parallax-desc">Movement creating depth</p>
+                <p class="example" data-lang="parallax-example">"The Lion King" (1994) - Stampede Scene</p>
+            </div>
+        </section>
+
+        <section id="spin" class="card">
+            <div class="animation-container">
+                <div class="camera-view spin-animation"></div>
+                <div class="subject"></div>
+            </div>
+            <div class="card-content">
+                <h2 data-lang="spin">Spin</h2>
+                <p class="description" data-lang="spin-desc">Full spin around the axis</p>
+                <p class="example" data-lang="spin-example">"Inception" (2010) - Dream Scenes</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>2025</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
